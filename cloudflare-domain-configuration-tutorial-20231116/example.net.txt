@@ -1,0 +1,13 @@
+;;
+;; Domain:	example.net.
+
+;; A Records
+*.example.net.	1	IN	A	WW.XX.YYY.ZZZ
+example.net.	1	IN	A	WW.XX.YYY.ZZZ
+mail.example.net.	1	IN	A	WW.XXX.YY.ZZZ
+
+;; MX Records
+example.net.	1	IN	MX	10 mail.example.net.
+
+;; TXT Records
+example.net.	1	IN	TXT	"v=spf1 ip4:WW.XXX.YY.ZZZ/24 ip6:a01a:b02b::c03c:d04d:e05e:f05f/64 ~all" ; SPF RECORD FOR EXAMPLE.NET
